@@ -15,7 +15,6 @@ header{
     align-items: center;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
-    /* border: 1px solid red; */
 }
 
 nav.header2 {
@@ -33,47 +32,7 @@ border-radius: 100%;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/********************CONFIGURAÇÃO DA BARRA DE PESQUISA*******************/
 
 
 .search-box {
