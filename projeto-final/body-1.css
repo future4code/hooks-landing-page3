@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-body{
+main{
     background-color: #f59b71;
 
 }
@@ -124,9 +124,8 @@ header{
     align-items: center;
     font-size: larger;
     font-weight: bold;
-
-
 }
+
 .banner2{
     background-color: white;
     grid-area: banner2;
@@ -136,9 +135,8 @@ header{
     align-items: center;
     font-size: larger;
     font-weight: bold;
-
-
 }
+
 .banner3{
     background-color: white;
     grid-area: banner3;
@@ -150,6 +148,7 @@ header{
     font-weight: bold;
 
 }
+
 .banner4{
     background-color: white;
     grid-area: banner4;
@@ -159,8 +158,6 @@ header{
     align-items: center;
     font-size: larger;
     font-weight: bold;
-
-
 }
 
 .banner1 img{
@@ -191,11 +188,8 @@ header{
 	grid-template-areas: 
 		" img1 img2 img2 " 
 		" img1 img3 img4 " 
-		;
-
-        
+		;    
 }
-
 
 
 .grid-2 {
@@ -226,6 +220,7 @@ header{
 .img4{
     grid-area: img4;
 }
+
 /* imagens */
 .img1 img{
     width: 100%;
@@ -243,9 +238,6 @@ header{
     width: 100%;
     height: 100%;
 }
-
-
-
 
 
 
