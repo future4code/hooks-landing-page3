@@ -12,6 +12,10 @@ header a{
     text-decoration: none;
     
 }
+.efeito-menu:hover{
+    background-color: #8a6f5f;
+    color: white;
+}
 
 header{
     display: grid;
@@ -106,12 +110,19 @@ header{
     }
 
 .grid-1 {
-    border: 1px solid red;
 	display: grid;  
     max-width: 85vw;
     height: 70vh;
 	margin: 20px auto;/*Quer dizer que as margens do topo e de baixo vão ser 30px e a da esquerda e da direita vão ser automáticas*/
     padding-top: 6%;
+}
+
+/* Efeitos nos Banners */
+
+.grid-1 div:hover{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
 }
 /*  */
 
@@ -203,6 +214,13 @@ header{
     max-width: 80vw;
     height: 80vh;
 	margin: 0 auto; /*Quer dizer que as margens do topo e de baixo vão ser 0px e a da esquerda e da direita vão ser automáticas*/
+    padding: 50px;
+}
+
+.grid-2 div:hover{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
 }
 
 .section2{
@@ -256,10 +274,62 @@ header{
 /* footer */
 footer{
     width: 100%;
-    height: 50px;
-    background-color: #c7c77f;
+    height: 40vh;
+    background-color: #F5AD62 ;
+    display: grid;  
+    
 }
 
+.grid-footer-template-area{
+    grid-template: 33% 33% 33%/33% 33% 33% ; 
+    
+	grid-template-areas: 
+		" bloco1 bloco2 bloco3 " 
+		" bloco1 bloco2 bloco3 " 
+        " bloco1 bloco2 bloco3"
+		;
+
+
+}
+
+.bc1{
+    grid-area: bloco1;
+    margin: 3%;
+}
+.bc2{
+    grid-area: bloco2;
+    margin: 3%;
+}
+.bc3{
+    grid-area: bloco3;
+    margin: 3%;
+
+}
+
+footer a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.bc2 img{
+    width: 40%;
+    height: 60%;
+    border-radius: 50% ;
+}
+
+.bc2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bc3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 5%;
+}
 
 
 
