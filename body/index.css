@@ -2,15 +2,25 @@
     margin: 0;
     padding: 0;
 }
-body{
+main{
     background-color: #f59b71;
-
 }
+
+/* Efeitos Menu */
+.efeito-menu:hover{
+    background-color: #8a6f5f;
+    color: white;
+}
+
+.efeito-menu-a:hover{
+    background-color: #8a6f5f;
+    color: white;
+}
+
 /* cabeçalho */
 header a{
     font-size: 1.3em;
     text-decoration: none;
-    
 }
 
 header{
@@ -18,7 +28,7 @@ header{
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 35% 1fr;
     background-color: white;
-    padding: 10px;
+    padding: 5px 20px;
 }
 
 .header1{
@@ -58,7 +68,7 @@ header{
     height: 50px;
 }
 
-#div2 a{
+.efeito-menu-a{
     color:  #8a6f5f;
 }
 
@@ -106,14 +116,21 @@ header{
     }
 
 .grid-1 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 	display: grid;  
     max-width: 85vw;
     height: 70vh;
 	margin: 20px auto;/*Quer dizer que as margens do topo e de baixo vão ser 30px e a da esquerda e da direita vão ser automáticas*/
     padding-top: 6%;
 }
-/*  */
+
+/* Efeitos nos Banners */
+.grid-1 div:hover{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+}
+
 
 .banner1{
     background-color: white;
@@ -124,9 +141,8 @@ header{
     align-items: center;
     font-size: larger;
     font-weight: bold;
-
-
 }
+
 .banner2{
     background-color: white;
     grid-area: banner2;
@@ -136,9 +152,8 @@ header{
     align-items: center;
     font-size: larger;
     font-weight: bold;
-
-
 }
+
 .banner3{
     background-color: white;
     grid-area: banner3;
@@ -150,6 +165,7 @@ header{
     font-weight: bold;
 
 }
+
 .banner4{
     background-color: white;
     grid-area: banner4;
@@ -159,8 +175,6 @@ header{
     align-items: center;
     font-size: larger;
     font-weight: bold;
-
-
 }
 
 .banner1 img{
@@ -191,11 +205,8 @@ header{
 	grid-template-areas: 
 		" img1 img2 img2 " 
 		" img1 img3 img4 " 
-		;
-
-        
+		;    
 }
-
 
 
 .grid-2 {
@@ -205,8 +216,16 @@ header{
 	margin: 0 auto; /*Quer dizer que as margens do topo e de baixo vão ser 0px e a da esquerda e da direita vão ser automáticas*/
 }
 
+/* Efeitos nos Banners */
+.grid-2 div:hover{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+}
+
 .section2{
     background-color: white;
+    padding: 8% 0%;
 }
 /* imagens da section 2 */
 
@@ -225,6 +244,7 @@ header{
 .img4{
     grid-area: img4;
 }
+
 /* imagens */
 .img1 img{
     width: 100%;
@@ -250,16 +270,66 @@ header{
 
 
 
-
-
-
 /* footer */
+
 footer{
     width: 100%;
-    height: 50px;
-    background-color: #c7c77f;
+    height: 40vh;
+    background-color: #8a6f5f;
+    display: grid;  
+    
 }
 
+.grid-footer-template-area{
+    grid-template: 33% 33% 33%/33% 33% 33% ; 
+    
+	grid-template-areas: 
+		" bloco1 bloco2 bloco3 " 
+		" bloco1 bloco2 bloco3 " 
+        " bloco1 bloco2 bloco3"
+		;
+
+
+}
+
+.bc1{
+    grid-area: bloco1;
+    margin: 3%;
+}
+.bc2{
+    grid-area: bloco2;
+    margin: 3%;
+}
+.bc3{
+    grid-area: bloco3;
+    margin: 3%;
+
+}
+
+footer a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.bc2 img{
+    width: 40%;
+    height: 60%;
+    border-radius: 60% ;
+}
+
+.bc2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bc3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 5%;
+}
 
 
 
